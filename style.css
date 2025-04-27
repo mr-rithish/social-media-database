@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffffdd;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: #4f9cff;
+  outline: none;
+  background-color: #f6fbff;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+button {
+  background-color: #4f9cff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px 3px 15px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #337fe8;
+}
+
+.logout-btn {
+  background-color: #ff5c5c;
+}
+
+.logout-btn:hover {
+  background-color: #e04646;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+.post {
+  background-color: #f9fbff;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid #dde6f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.post strong {
+  color: #1a1a1a;
+}
+
+.post button {
+  background-color: transparent;
+  color: #4f9cff;
+  border: none;
+  padding: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.post button:hover {
+  text-decoration: underline;
+}
+
+.comment-section input {
+  width: 70%;
+  margin-top: 10px;
+}
+
+.comments {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  padding-top: 8px;
+}
+
+.welcome {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-top: 4px;
+}
+
+.header {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}

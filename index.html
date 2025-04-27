@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Spark</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <div class="container" id="authSection">
+    <div class="header">Social Spark</div>
+    <h2>Sign Up / Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <p class="error" id="authMsg"></p>
+  </div>
+
+  <div class="container" id="mainApp" style="display: none;">
+    <div class="header">Social Spark</div>
+    <div class="welcome">👋 Hello, <span id="currentUser"></span>!</div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <div class="post-section">
+      <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+      <button onclick="addPost()">Post</button>
+    </div>
+
+    <div id="feed"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
